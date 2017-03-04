@@ -2,6 +2,7 @@ package com.myrule.kumarayogi;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -88,7 +89,8 @@ public class Home extends AppCompatActivity implements MyRuleAdapter {
                         Toast.makeText(getApplicationContext(),"Coming soon",Toast.LENGTH_SHORT).show();
                         break;
                     case 3:
-                        Toast.makeText(getApplicationContext(),"Coming soon",Toast.LENGTH_SHORT).show();
+                        intent=new Intent(getApplicationContext(),PdfDownload.class);
+                        startActivity(intent);
                         break;
                 }
 
