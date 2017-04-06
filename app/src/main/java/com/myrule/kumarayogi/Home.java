@@ -81,6 +81,7 @@ public class Home extends AppCompatActivity implements MyRuleAdapter {
                 Intent intent;
                 switch (i){
                     case 0: intent=new Intent(getApplicationContext(),Reader.class);
+                        intent.putExtra("file_name","file1.pdf");
                         startActivity(intent);break;
                     case 1:
                         intent=new Intent(getApplicationContext(),Gallery.class);
